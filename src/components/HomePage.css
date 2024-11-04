@@ -1,0 +1,30 @@
+.homepage-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background-image: url('/images/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.text{
+  margin-bottom: 10vh;
+}
+
+.content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh; }
+
+
+.app-name {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 1vh; 
+}
