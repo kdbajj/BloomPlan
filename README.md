@@ -1,50 +1,62 @@
-# React + TypeScript + Vite
+# 🌸 Bloom Plan - Social Media Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bloom Plan is a web application designed to streamline social media content planning and scheduling. Created for small businesses, content creators, and social media managers, Bloom Plan allows you to manage posts across multiple platforms, track engagement, and organize campaigns, all in one place. The app integrates with Instagram, TikTok, and Facebook, providing a centralized dashboard for content planning and analysis.
 
-Currently, two official plugins are available:
+## 📋 Table of Contents
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Folder Structure](#folder-structure)
+- [API Integrations](#api-integrations)
+- [Contributing](#contributing)
+- [License](#license)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## Expanding the ESLint configuration
+- **Dashboard Overview:**
+  - Mini Calendar for a quick overview of upcoming posts.
+  - Activity Summary showing recent engagement statistics.
+  - Notifications for upcoming posts and published content.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Interactive Calendar:**
+  - Full calendar view with drag-and-drop post management.
+  - Monthly, weekly, and daily views.
+  - Filter posts by platform (Instagram, TikTok, Facebook).
 
-- Configure the top-level `parserOptions` property like this:
+- **Post Management:**
+  - Create and schedule posts directly in the app.
+  - Manage drafts for unfinished content.
+  - Categorize posts with tags for easy organization.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Analytics:**
+  - Summary of likes, comments, and shares for each post.
+  - Detailed analysis of post performance by date, platform, and tags.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- **Account Management:**
+  - Integrate social media accounts with Bloom Plan.
+  - Check authorization status and sync data.
+  - View and manage connected accounts.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Settings:**
+  - Customize dashboard view and calendar display options.
+  - Configure notifications for upcoming posts and analytics.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 📸 Screenshots
+
+*()*
+
+## 🛠 Technologies Used
+
+- **Frontend:** React, Vite, TypeScript
+- **State Management:** *(Specify if you use Redux, Context API, etc.)*
+- **Styling:** CSS *(or any other styling library like Tailwind CSS, Styled Components, etc.)*
+- **Backend:** Node.js, Express *(if applicable)*
+- **Database:** MongoDB / Firebase / *(any other database you're using)*
+- **Authentication:** OAuth for social media integrations
+- **APIs:** Instagram Graph API, Facebook Graph API, TikTok API *(or other social media APIs)*
+
+## 🎮 Usage
+
+1. Sign Up or Log In to access the app.
