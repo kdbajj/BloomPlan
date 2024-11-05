@@ -1,0 +1,167 @@
+
+.register-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.register-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(500);
+    padding: 50px 100px;
+    border-radius: 10px;
+    width: 600px; 
+    height: 650px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    text-align: center;
+}
+
+.register-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+.register-subtitle {
+    font-size: 0.9em;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+}
+
+  .email-input {
+    margin-bottom: 50px;
+  }
+  
+  .password-input {
+    margin-bottom: 50px;
+  }
+
+.input-container {
+    position: relative;
+}
+
+.input-container label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 1em;
+    color: white;
+    transition: 0.3s ease;
+    pointer-events: none;
+    font-weight: 600; 
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 1em;
+    outline: none;
+}
+
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: -20px;
+    font-size: 0.9em;
+}
+
+.register-button {
+    width: 160px;
+    height: 40px;
+    font-size: 16px; 
+    font-weight: 600; 
+    color: white;
+    background: linear-gradient(to right, #E988E9, #E0A0E0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-self: center; 
+    margin-top: 60px;
+}
+
+.register-button:hover {
+    transform: translateY(-2px);
+}
+
+.login-prompt {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    align-self: center; 
+    font-size: 1.25em;
+    color: white;  
+}
+
+.login-prompt a {
+    color: white;
+    text-shadow: 0 0 8px rgba(235, 194, 238, 0.5);
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+    margin-bottom: 10px; 
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.register-prompt a:hover {
+    color: rgba(72, 64, 64, 0.4);
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.register {
+    margin-top: 30px; 
+  }
+
+.register-alternate-google {
+    margin-bottom: 50px; 
+  }
+
+@media (max-width: 768px) {
+    .register-container {
+        background-color: transparent;
+        padding: 40px 20px; 
+        justify-content: center;
+        width: 90%; 
+        height: auto; 
+    }
+
+    .register-title {
+        font-size: 1.5em;
+        margin-top: -150px;
+    }
+
+    .register-subtitle {
+        font-size: 0.8em; 
+        margin-top: 10px; 
+        margin-bottom: 10px; 
+    }
+
+    .login-prompt {
+        font-size: 1em; 
+        margin-bottom: 10px; 
+    }
+
+    .login-prompt a {
+        font-size: 1em;
+    }
+}
