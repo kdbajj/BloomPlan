@@ -1,0 +1,78 @@
+body {
+    background-image: url('/images/main-page-background.png');
+    background-size: cover; /* Dopasowanie obrazu do rozmiaru ekranu */
+    background-position: center; /* Wyśrodkowanie obrazu */
+  }
+  
+
+.main-page-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Stylowanie panelu bocznego */
+  .sidebar {
+    width: 316px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.header h1 {
+    font-size: 36px;
+    font-weight: 500;  
+    text-align: center;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-button {
+    width: 316px;
+    border-radius: 20px;
+    height: 40px;
+    background-color: transparent;
+    color: #31302E;  /* Szary kolor tekstu */
+    border: none;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 14px;
+    margin-bottom: 20px;  /* Odstęp pomiędzy przyciskami */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-button:hover {
+    background-color: #31302E;
+    color: white;
+  }
+  
+  /* Stylowanie aktywnego przycisku */
+  .menu-button.active {
+    background-color: #31302E;  /* Kolor tła aktywnego przycisku */
+    color: white;  /* Biały tekst aktywnego przycisku */
+  }
+  
+  /* Stylowanie kontentu */
+  .content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  .content h1 {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .content p {
+    color: #666;
+    font-size: 16px;
+  }
+  
